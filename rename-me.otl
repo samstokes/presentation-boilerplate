@@ -6,13 +6,55 @@ Topic 1
 	:At least one slide needs to start with a body-level element otherwise the
 	:slidy translation's heuristic for title slide detection misfires
 	Subheading
-		This is cool
-		This is an image:
-		<IMAGE
-		<http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg
+		With bullet points
+		To add
+		Important context
 Topic 2
+	<IMAGE
+	<http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg
+	Image to the left of slide text
+		With some bullet points
+		To accompany
+		The image
+Topic 3
 	Subheading
 		>MARKDOWN
 		>Some *Markdown*
 		<BASH
 		<for i in {1..3}; do echo ${ports[i]}; done
+Image taking up whole slide
+	>MARKDOWN
+	><h2><img
+	>src="http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg"
+	>class="full" /></h2>
+	><!--
+	>  enclose img in <h2> to avoid a spurious bullet
+	>-->
+Topic 4
+	>MARKDOWN
+	><h2><img
+	>src="http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg"
+	>class="right-half" /></h2>
+	Image on the right of slide text
+		With some bullet points
+		To accompany
+		The image
+Images on left and right
+	>MARKDOWN
+	><h2><img
+	>src="http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg"
+	>/></h2>
+	>
+	><h2><img
+	>src="http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg"
+	>class="right" /></h2>
+	>
+	><h2><img
+	>src="http://blog.samstokes.co.uk/images/cocktails/steel-quartet-1280.jpg"
+	>class="right" /></h2>
+	Read this thing
+		because it's good
+	And this thing
+		for similar reasons
+	And also this thing
+		if you get bored
