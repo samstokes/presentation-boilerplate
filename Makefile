@@ -24,7 +24,7 @@ $(ARCHIVE_NAME).zip: dist
 	cd $< && zip ../$@ *
 
 $(SLIDES): $(NAME).otl
-	OTL slidy <$< >$@
+	vimoutliner-pandoc slidy <$< >$@
 	if [ -n "$(SLIDES_STYLESHEET)" ]; then sed -i 's|</head>|\n<link href="$(SLIDES_STYLESHEET)" type="text/css" rel="stylesheet" />\n</head>|' $@; fi
 
 $(SLIDES_DIST): $(SLIDES) $(SLIDES_STYLESHEET) splice.sed
